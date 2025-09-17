@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
         lblPickerTime.text = formatter.string(from: datePickerView.date)
     }
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         let date = NSDate()
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
         lblCurrentTime.text = formatter.string(from: date as Date)
     
         if(lblCurrentTime.text == lblPickerTime.text)
